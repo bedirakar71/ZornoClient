@@ -18,8 +18,4 @@ public class TintedVertexConsumer implements VertexConsumer {
     @Override public VertexConsumer overlay(int u, int v) { delegate.overlay(u, v); return this; }
     @Override public VertexConsumer light(int u, int v) { delegate.light(u, v); return this; }
     @Override public VertexConsumer normal(float x, float y, float z) { delegate.normal(x, y, z); return this; }
-    @Override public void fixedColor(int red, int green, int blue, int alpha) {
-        delegate.fixedColor((int)(red * r), (int)(green * g), (int)(blue * b), alpha);
-    }
-    @Override public void unfixColor() { delegate.unfixColor(); }
 }
