@@ -6,7 +6,6 @@
     "SimpleOptionMixin",
     "GameRendererMixin",
     "MouseMixin",
-    "SplashOverlayMixin",
     "WorldRendererMixin",
     "CritParticleMixin",
     "ItemRendererMixin",
