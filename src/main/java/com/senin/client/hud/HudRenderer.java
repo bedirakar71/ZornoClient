@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.PlayerListEntry;
+import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -15,7 +16,7 @@ import net.minecraft.util.Formatting;
 public class HudRenderer {
     public static void register() { HudRenderCallback.EVENT.register(HudRenderer::onHud); }
 
-    private static void onHud(DrawContext ctx, float tickDelta) {
+    private static void onHud(DrawContext ctx, RenderTickCounter tickCounter) {
         MinecraftClient mc = MinecraftClient.getInstance();
         if (!Config.hud || mc.player == null || mc.options.hudHidden) return;
         int x = 4, y = 4;
