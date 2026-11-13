@@ -8,7 +8,6 @@
     "MouseMixin",
     "WorldRendererMixin",
     "CritParticleMixin",
-    "ItemRendererMixin",
     "HeldItemRendererMixin",
     "EntityCullMixin",
     "InGameHudMixin",
