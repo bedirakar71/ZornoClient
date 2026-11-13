@@ -1,0 +1,9 @@
+{
+  "key.seninclient.menu": "Open Zorno Menu",
+  "key.seninclient.zoom": "Zoom",
+  "key.seninclient.fullbright": "Fullbright",
+  "key.seninclient.nohurtcam": "No Hurt Cam",
+  "key.seninclient.togglesprint": "Toggle Sprint",
+  "key.seninclient.hud": "HUD Toggle",
+  "category.seninclient": "Zorno Client"
+}
