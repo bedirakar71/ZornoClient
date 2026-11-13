@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "com.senin.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "SimpleOptionMixin",
+    "GameRendererMixin",
+    "MouseMixin",
+    "SplashOverlayMixin",
+    "WorldRendererMixin",
+    "CritParticleMixin",
+    "ItemRendererMixin",
+    "HeldItemRendererMixin",
+    "EntityCullMixin",
+    "InGameHudMixin",
+    "SkyThemeMixin",
+    "FogMixin",
+    "WeatherMixin",
+    "ParticleManagerMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}
