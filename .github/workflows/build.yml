@@ -1,0 +1,32 @@
+name: Zorno Client Derle
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 1. Kodu Çek
+      uses: actions/checkout@v4
+
+    - name: 2. Java 21 Kur
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: 3. Gradle Kur (Sistem)
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: 4. Modu Derle (Gradlew olmadan)
+      run: gradle build
+
+    - name: 5. Derlenen .jar Dosyasını Yükle
+      uses: actions/upload-artifact@v4
+      with:
+        name: ZornoClient-Mod
+        path: build/libs/*.jar
